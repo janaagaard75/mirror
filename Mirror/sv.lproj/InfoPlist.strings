@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Spegel";
-"NSCameraUsageDescription" = "Spegel behöver frontkameran för att visa en spegelvänd förhandsvisning i realtid.";
+"NSCameraUsageDescription" = "För att använda skärmen som en spegel.";

@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Spiegel";
-"NSCameraUsageDescription" = "Spiegel benötigt die Frontkamera, um eine spiegelverkehrte Live-Vorschau anzuzeigen.";
+"NSCameraUsageDescription" = "Um den Bildschirm als Spiegel zu verwenden.";

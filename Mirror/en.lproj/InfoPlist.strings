@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Mirror";
-"NSCameraUsageDescription" = "Mirror needs the front camera to show a live mirrored preview.";
+"NSCameraUsageDescription" = "To use the screen as a mirror.";
