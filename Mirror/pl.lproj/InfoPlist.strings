@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Lustro";
-"NSCameraUsageDescription" = "Lustro potrzebuje dostępu do przedniego aparatu, aby wyświetlić podgląd lustrzany na żywo.";
+"NSCameraUsageDescription" = "Aby używać ekranu jako lustra.";

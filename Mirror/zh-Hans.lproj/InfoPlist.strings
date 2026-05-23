@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "镜子";
-"NSCameraUsageDescription" = "“镜子”需要使用前置摄像头来显示实时镜像预览。";
+"NSCameraUsageDescription" = "将屏幕用作镜子。";

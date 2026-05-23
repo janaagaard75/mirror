@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "ミラー";
-"NSCameraUsageDescription" = "ライブの鏡像プレビューを表示するため、ミラーはフロントカメラへのアクセスが必要です。";
+"NSCameraUsageDescription" = "画面を鏡として使用するため。";

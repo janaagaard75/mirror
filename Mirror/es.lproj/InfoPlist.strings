@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Espejo";
-"NSCameraUsageDescription" = "Espejo necesita la cámara frontal para mostrar una vista previa reflejada en vivo.";
+"NSCameraUsageDescription" = "Para usar la pantalla como un espejo.";

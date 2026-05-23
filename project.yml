@@ -19,7 +19,7 @@ targets:
         SWIFT_VERSION: "5.0"
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: "Mirror"
-        INFOPLIST_KEY_NSCameraUsageDescription: "Mirror needs the front camera to show a live mirrored preview."
+        INFOPLIST_KEY_NSCameraUsageDescription: "To use the screen as a mirror."
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
         INFOPLIST_KEY_UIStatusBarHidden: YES

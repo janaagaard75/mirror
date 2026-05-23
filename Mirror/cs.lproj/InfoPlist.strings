@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Zrcadlo";
-"NSCameraUsageDescription" = "Zrcadlo potřebuje přední kameru k zobrazení živého zrcadleného náhledu.";
+"NSCameraUsageDescription" = "Pro použití obrazovky jako zrcadla.";

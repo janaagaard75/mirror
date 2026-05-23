@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Spejl";
-"NSCameraUsageDescription" = "Spejl skal bruge frontkameraet til at vise et levende, spejlvendt billede.";
+"NSCameraUsageDescription" = "For at bruge skærmen som et spejl.";

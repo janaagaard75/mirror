@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Miroir";
-"NSCameraUsageDescription" = "Miroir a besoin de la caméra frontale pour afficher un aperçu miroir en direct.";
+"NSCameraUsageDescription" = "Pour utiliser l'écran comme un miroir.";

@@ -1,2 +1,2 @@
 "CFBundleDisplayName" = "Espelho";
-"NSCameraUsageDescription" = "O Espelho precisa da câmara frontal para mostrar uma pré-visualização espelhada em direto.";
+"NSCameraUsageDescription" = "Para usar o ecrã como espelho.";
