@@ -9,14 +9,51 @@
 /* Begin PBXBuildFile section */
 		127E4632BB3252ECD21F5AE7 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B5761662BCE4F828D5E6E /* CameraPreview.swift */; };
 		14F32E4B83527193426DD0F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B954DB73384C9ED703C3B42 /* ContentView.swift */; };
+		D53B676588FA9972303CAAAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C353C15A6DFCA31FCC11D3F /* InfoPlist.strings */; };
 		D952B833469B034BE6BF92FD /* MirrorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF2DFA545B77756DD23447 /* MirrorApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1AEC7BFFF344962F26EC8458 /* Mirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12571CE622B0AF3471AB228E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		153695B0BA66343CA3362301 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AEC7BFFF344962F26EC8458 /* Mirror.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Mirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20126EDA9A47EE47BE931CE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		278642C2F5C4D0A8017B582C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2ABD74F43E8E51371F9D1169 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2AE3208CE652CFD7C483592F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B4DC586C67DE98E75EC60EB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2BFF2DFA545B77756DD23447 /* MirrorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorApp.swift; sourceTree = "<group>"; };
+		351ABA881830F2F5EB7A0D60 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49C490BCFB51E23EE1C16971 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B954DB73384C9ED703C3B42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78A68545874E9CD5CF4A7E21 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AB5A0CBD48480B02ABE6FDE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		869E98C2AB9E358B11EF3CF8 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		87AABEA6DC397E1FFAFE8BD5 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8835C1FA3BB81F9E43F71522 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9129E058C0B92D00726C53B8 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		931B5761662BCE4F828D5E6E /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		95A9CFC3B6B56D34CB7AB2EC /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98887AFB2610200706ABE369 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99526E68E01A957B325B6442 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9EF1830941721DCFC16B7F5B /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FFDC0089632E68F466FBF84 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8D24F36EEB6EC5FE3661E88 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C05C46285C1361ECB0190E69 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0A368BDEEA26A894BD3AA81 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C5CE402C8504D56FAE709E5B /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C902288BBCEAC7AFEDCCBAD1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDA116093DB91DBF15FDE68E /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D28917ABA8C49627C4752163 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D373397F882AD21F7E5D46C6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D68B91EA973FA9BA0E7B5EB2 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD7170EE4B95418443C9910F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6A3B200CDDCAB41ECC6CA12 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		EB2BC51478659C0275800F07 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFEFA5E33DBA3E65B0F16A9C /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F340211A38960C23DBA08DEF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9FC01905AFEDA09111711CC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC6AEE8E644B23D3D1295D5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -34,6 +71,7 @@
 				931B5761662BCE4F828D5E6E /* CameraPreview.swift */,
 				5B954DB73384C9ED703C3B42 /* ContentView.swift */,
 				2BFF2DFA545B77756DD23447 /* MirrorApp.swift */,
+				3C353C15A6DFCA31FCC11D3F /* InfoPlist.strings */,
 			);
 			path = Mirror;
 			sourceTree = "<group>";
@@ -54,6 +92,7 @@
 			buildConfigurationList = 8E3C23D676EE9E61D3A9CC76 /* Build configuration list for PBXNativeTarget "Mirror" */;
 			buildPhases = (
 				5AE1BB719A8672AF16E99576 /* Sources */,
+				3A10D8E745F91A781DE63CD2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -73,14 +112,51 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2650;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 02E1EC886FF768802A008E1F /* Build configuration list for PBXProject "Mirror" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				ar,
+				ca,
+				cs,
+				da,
+				de,
+				el,
 				en,
+				es,
+				"es-MX",
+				fi,
+				fr,
+				"fr-CA",
+				he,
+				hi,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nb,
+				nl,
+				pl,
+				"pt-BR",
+				"pt-PT",
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				uk,
+				vi,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 60677C36157AC41ADAC5FABD;
 			minimizedProjectReferenceProxies = 1;
@@ -94,6 +170,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3A10D8E745F91A781DE63CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53B676588FA9972303CAAAD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5AE1BB719A8672AF16E99576 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -106,6 +193,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C353C15A6DFCA31FCC11D3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FFDC0089632E68F466FBF84 /* ar */,
+				9129E058C0B92D00726C53B8 /* ca */,
+				A8D24F36EEB6EC5FE3661E88 /* cs */,
+				8835C1FA3BB81F9E43F71522 /* da */,
+				DD7170EE4B95418443C9910F /* de */,
+				99526E68E01A957B325B6442 /* el */,
+				FC6AEE8E644B23D3D1295D5E /* en */,
+				D28917ABA8C49627C4752163 /* es */,
+				CDA116093DB91DBF15FDE68E /* es-MX */,
+				869E98C2AB9E358B11EF3CF8 /* fi */,
+				351ABA881830F2F5EB7A0D60 /* fr */,
+				EFEFA5E33DBA3E65B0F16A9C /* fr-CA */,
+				9EF1830941721DCFC16B7F5B /* he */,
+				153695B0BA66343CA3362301 /* hi */,
+				D68B91EA973FA9BA0E7B5EB2 /* hr */,
+				EB2BC51478659C0275800F07 /* hu */,
+				78A68545874E9CD5CF4A7E21 /* id */,
+				D373397F882AD21F7E5D46C6 /* it */,
+				2AE3208CE652CFD7C483592F /* ja */,
+				F340211A38960C23DBA08DEF /* ko */,
+				87AABEA6DC397E1FFAFE8BD5 /* ms */,
+				C0A368BDEEA26A894BD3AA81 /* nb */,
+				278642C2F5C4D0A8017B582C /* nl */,
+				95A9CFC3B6B56D34CB7AB2EC /* pl */,
+				2B4DC586C67DE98E75EC60EB /* pt-BR */,
+				7AB5A0CBD48480B02ABE6FDE /* pt-PT */,
+				49C490BCFB51E23EE1C16971 /* ro */,
+				F9FC01905AFEDA09111711CC /* ru */,
+				98887AFB2610200706ABE369 /* sk */,
+				C05C46285C1361ECB0190E69 /* sv */,
+				2ABD74F43E8E51371F9D1169 /* th */,
+				20126EDA9A47EE47BE931CE5 /* tr */,
+				C5CE402C8504D56FAE709E5B /* uk */,
+				C902288BBCEAC7AFEDCCBAD1 /* vi */,
+				12571CE622B0AF3471AB228E /* zh-Hans */,
+				E6A3B200CDDCAB41ECC6CA12 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		90123DE5EDB51C5CD527A90C /* Debug */ = {
@@ -143,10 +276,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 6UXZ93SX6E;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -167,7 +298,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -180,6 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mirror;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Mirror needs the front camera to show a live mirrored preview.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -231,10 +362,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6UXZ93SX6E;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -248,7 +377,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -261,6 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mirror;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Mirror needs the front camera to show a live mirrored preview.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
