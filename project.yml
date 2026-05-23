@@ -1,0 +1,24 @@
+name: Mirror
+options:
+  bundleIdPrefix: net.aagaard
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+targets:
+  Mirror:
+    type: application
+    platform: iOS
+    sources:
+      - path: Mirror
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: net.aagaard.mirror
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSCameraUsageDescription: "Mirror needs the front camera to show a live mirrored preview."
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_UIStatusBarHidden: YES
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
