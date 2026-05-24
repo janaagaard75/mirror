@@ -310,7 +310,7 @@
 				DEVELOPMENT_TEAM = 6UXZ93SX6E;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mirror;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Mirror needs the front camera to show a live mirrored preview.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To use the screen as a mirror.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
@@ -390,7 +390,7 @@
 				DEVELOPMENT_TEAM = 6UXZ93SX6E;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mirror;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Mirror needs the front camera to show a live mirrored preview.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To use the screen as a mirror.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;

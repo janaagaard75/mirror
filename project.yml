@@ -17,6 +17,8 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: net.aagaard.mirror
         TARGETED_DEVICE_FAMILY: "1,2"
         SWIFT_VERSION: "5.0"
+        DEVELOPMENT_TEAM: 6UXZ93SX6E
+        CODE_SIGN_IDENTITY: "iPhone Developer"
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: "Mirror"
         INFOPLIST_KEY_NSCameraUsageDescription: "To use the screen as a mirror."
