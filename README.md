@@ -1,6 +1,6 @@
 # Mirror
 
-Minimal iOS app that shows a full-screen, mirrored live preview of the front-facing camera. No buttons — just two gestures.
+Minimal iOS/iPadOS app that shows a full-screen, mirrored live preview of the front-facing camera. No buttons — just two gestures.
 
 ## Gestures
 
