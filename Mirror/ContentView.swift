@@ -21,18 +21,30 @@ struct ContentView: View {
                         .frame(height: geometry.size.height / 6)
                         .opacity(e ? 1 : 0)
                 }
+                .allowsHitTesting(false)
+                VStack {
+                    Spacer()
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            e.toggle()
+                        }
+                    } label: {
+                        Image(systemName: "bolt.fill")
+                            .font(.system(size: 28, weight: .semibold))
+                            .foregroundStyle(Color.white)
+                            .frame(width: 64, height: 64)
+                            .contentShape(Circle())
+                    }
+                    .buttonStyle(.plain)
+                    .glassEffect(e ? .regular.tint(.orange.opacity(0.6)) : .clear, in: Circle())
+                    .padding(.bottom, geometry.size.height / 12 - 32 + 20)
+                }
             }
         }
         .ignoresSafeArea()
         .background(Color.black)
         .statusBarHidden()
         .persistentSystemOverlays(.hidden)
-        .contentShape(Rectangle())
-        .onTapGesture {
-            withAnimation(.easeInOut(duration: 0.2)) {
-                e.toggle()
-            }
-        }
         .simultaneousGesture(
             MagnifyGesture()
                 .onChanged { value in
