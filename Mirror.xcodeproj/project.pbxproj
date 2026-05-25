@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		127E4632BB3252ECD21F5AE7 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B5761662BCE4F828D5E6E /* CameraPreview.swift */; };
 		14F32E4B83527193426DD0F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B954DB73384C9ED703C3B42 /* ContentView.swift */; };
+		7FD2ED971F3086BE5AA1F125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF47088136F4042A5785D3A5 /* Assets.xcassets */; };
+		9C7F8670848FB76723697FA2 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4D69049E71CD3D508BD6D63E /* PrivacyInfo.xcprivacy */; };
 		D53B676588FA9972303CAAAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C353C15A6DFCA31FCC11D3F /* InfoPlist.strings */; };
 		D952B833469B034BE6BF92FD /* MirrorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF2DFA545B77756DD23447 /* MirrorApp.swift */; };
 /* End PBXBuildFile section */
@@ -16,7 +18,7 @@
 /* Begin PBXFileReference section */
 		12571CE622B0AF3471AB228E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		153695B0BA66343CA3362301 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1AEC7BFFF344962F26EC8458 /* Mirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEC7BFFF344962F26EC8458 /* Mirror.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Mirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20126EDA9A47EE47BE931CE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		278642C2F5C4D0A8017B582C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2ABD74F43E8E51371F9D1169 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -25,6 +27,7 @@
 		2BFF2DFA545B77756DD23447 /* MirrorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorApp.swift; sourceTree = "<group>"; };
 		351ABA881830F2F5EB7A0D60 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49C490BCFB51E23EE1C16971 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D69049E71CD3D508BD6D63E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5B954DB73384C9ED703C3B42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78A68545874E9CD5CF4A7E21 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AB5A0CBD48480B02ABE6FDE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		9EF1830941721DCFC16B7F5B /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FFDC0089632E68F466FBF84 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A8D24F36EEB6EC5FE3661E88 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF47088136F4042A5785D3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05C46285C1361ECB0190E69 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0A368BDEEA26A894BD3AA81 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5CE402C8504D56FAE709E5B /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -68,9 +72,11 @@
 		ACCF51ACB298FD7C2D4524D9 /* Mirror */ = {
 			isa = PBXGroup;
 			children = (
+				BF47088136F4042A5785D3A5 /* Assets.xcassets */,
 				931B5761662BCE4F828D5E6E /* CameraPreview.swift */,
 				5B954DB73384C9ED703C3B42 /* ContentView.swift */,
 				2BFF2DFA545B77756DD23447 /* MirrorApp.swift */,
+				4D69049E71CD3D508BD6D63E /* PrivacyInfo.xcprivacy */,
 				3C353C15A6DFCA31FCC11D3F /* InfoPlist.strings */,
 			);
 			path = Mirror;
@@ -113,6 +119,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					641264E2E78C798538194157 = {
+						DevelopmentTeam = 6UXZ93SX6E;
+					};
+				};
 			};
 			buildConfigurationList = 02E1EC886FF768802A008E1F /* Build configuration list for PBXProject "Mirror" */;
 			developmentRegion = en;
@@ -173,7 +184,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD2ED971F3086BE5AA1F125 /* Assets.xcassets in Resources */,
 				D53B676588FA9972303CAAAD /* InfoPlist.strings in Resources */,
+				9C7F8670848FB76723697FA2 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +320,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6UXZ93SX6E;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mirror;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To use the screen as a mirror.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -319,6 +334,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aagaard.mirror;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -387,9 +403,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6UXZ93SX6E;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mirror;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To use the screen as a mirror.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -399,6 +417,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aagaard.mirror;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
