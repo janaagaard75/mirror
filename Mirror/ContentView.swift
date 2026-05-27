@@ -3,6 +3,7 @@ import UIKit
 
 struct ContentView: View {
   let buttonSize = 64.0
+  let buttonOffset = 2.0
 
   @State private var floodLightOn = false
   @State private var brightnessBeforeFlashlight: CGFloat = 0.5
@@ -26,9 +27,13 @@ struct ContentView: View {
             .frame(height: geometry.size.height / 6)
             .opacity(floodLightOn ? 1 : 0)
           Spacer(minLength: 0)
-          Color.white
-            .frame(height: geometry.size.height / 6)
-            .opacity(floodLightOn ? 1 : 0)
+          RectangleWithCircularCutout(
+            cutoutRadius: buttonSize / 2,
+            cutoutVerticalOffset: -buttonOffset
+          )
+          .fill(Color.white, style: FillStyle(eoFill: true))
+          .frame(height: geometry.size.height / 6)
+          .opacity(floodLightOn ? 1 : 0)
         }
         .allowsHitTesting(false)
         VStack {
@@ -45,8 +50,8 @@ struct ContentView: View {
               .contentShape(Circle())
           }
           .buttonStyle(.plain)
-          .glassEffect(floodLightOn ? .clear.tint(Color(red: 0.5, green: 0.5, blue: 0.6)) : .clear, in: Circle())
-          .padding(.bottom, geometry.size.height / 12 - buttonSize / 2 + 2)
+          .glassEffect(.clear, in: Circle())
+          .padding(.bottom, geometry.size.height / 12 - buttonSize / 2 + buttonOffset)
         }
       }
     }
@@ -72,5 +77,25 @@ struct ContentView: View {
         screen.brightness = brightnessBeforeFlashlight
       }
     }
+  }
+}
+
+private struct RectangleWithCircularCutout: Shape {
+  let cutoutRadius: CGFloat
+  let cutoutVerticalOffset: CGFloat
+
+  func path(in rect: CGRect) -> Path {
+    var path = Path()
+    path.addRect(rect)
+    let center = CGPoint(x: rect.midX, y: rect.midY + cutoutVerticalOffset)
+    path.addEllipse(
+      in: CGRect(
+        x: center.x - cutoutRadius,
+        y: center.y - cutoutRadius,
+        width: cutoutRadius * 2,
+        height: cutoutRadius * 2
+      )
+    )
+    return path
   }
 }
