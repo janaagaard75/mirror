@@ -44,7 +44,7 @@ struct ContentView: View {
                     }
                     .buttonStyle(.plain)
                     .glassEffect(e ? .clear.tint(Color(red: 0.5, green: 0.5, blue: 0.6)) : .clear, in: Circle())
-                    .padding(.bottom, geometry.size.height / 12 - 32 + 20)
+                    .padding(.bottom, geometry.size.height / 12 - 32 + 2)
                 }
             }
         }
