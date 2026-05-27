@@ -2,7 +2,7 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
-    @State private var e = false
+    @State private var floodLightOn = false
     @State private var brightnessBeforeFlashlight: CGFloat = 0.5
     @State private var zoom: CGFloat = 1.0
     @State private var zoomAtGestureStart: CGFloat = 1.0
@@ -22,18 +22,18 @@ struct ContentView: View {
                 VStack(spacing: 0) {
                     Color.white
                         .frame(height: geometry.size.height / 6)
-                        .opacity(e ? 1 : 0)
+                        .opacity(floodLightOn ? 1 : 0)
                     Spacer(minLength: 0)
                     Color.white
                         .frame(height: geometry.size.height / 6)
-                        .opacity(e ? 1 : 0)
+                        .opacity(floodLightOn ? 1 : 0)
                 }
                 .allowsHitTesting(false)
                 VStack {
                     Spacer()
                     Button {
                         withAnimation(.easeInOut(duration: 0.2)) {
-                            e.toggle()
+                            floodLightOn.toggle()
                         }
                     } label: {
                         Image(systemName: "bolt.fill")
@@ -43,7 +43,7 @@ struct ContentView: View {
                             .contentShape(Circle())
                     }
                     .buttonStyle(.plain)
-                    .glassEffect(e ? .clear.tint(Color(red: 0.5, green: 0.5, blue: 0.6)) : .clear, in: Circle())
+                    .glassEffect(floodLightOn ? .clear.tint(Color(red: 0.5, green: 0.5, blue: 0.6)) : .clear, in: Circle())
                     .padding(.bottom, geometry.size.height / 12 - 32 + 2)
                 }
             }
@@ -61,7 +61,7 @@ struct ContentView: View {
                     zoomAtGestureStart = zoom
                 }
         )
-        .onChange(of: e) { _, turnedOn in
+        .onChange(of: floodLightOn) { _, turnedOn in
             guard let screen = currentScreen else { return }
             if turnedOn {
                 brightnessBeforeFlashlight = screen.brightness
