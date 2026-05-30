@@ -123,7 +123,7 @@ private struct CameraAccessNeededView: View {
           .font(.title2.weight(.semibold))
           .foregroundStyle(Color.white)
 
-        Text("Mirror shows your camera so you can use the screen as a mirror. It can't work without access to the camera.")
+        Text("Mirror needs access to your camera to use the screen as a mirror. It can't work without access to the camera.")
           .multilineTextAlignment(.center)
           .foregroundStyle(Color.white.opacity(0.75))
 

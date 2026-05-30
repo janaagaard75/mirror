@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C82BC936F692C649312E99 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 18717181A07103750B2DDF1D /* Localizable.xcstrings */; };
 		127E4632BB3252ECD21F5AE7 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B5761662BCE4F828D5E6E /* CameraPreview.swift */; };
 		14F32E4B83527193426DD0F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B954DB73384C9ED703C3B42 /* ContentView.swift */; };
 		7FD2ED971F3086BE5AA1F125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF47088136F4042A5785D3A5 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18717181A07103750B2DDF1D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		12571CE622B0AF3471AB228E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		153695B0BA66343CA3362301 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AEC7BFFF344962F26EC8458 /* Mirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				BF47088136F4042A5785D3A5 /* Assets.xcassets */,
 				931B5761662BCE4F828D5E6E /* CameraPreview.swift */,
 				5B954DB73384C9ED703C3B42 /* ContentView.swift */,
+				18717181A07103750B2DDF1D /* Localizable.xcstrings */,
 				2BFF2DFA545B77756DD23447 /* MirrorApp.swift */,
 				4D69049E71CD3D508BD6D63E /* PrivacyInfo.xcprivacy */,
 				3C353C15A6DFCA31FCC11D3F /* InfoPlist.strings */,
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FD2ED971F3086BE5AA1F125 /* Assets.xcassets in Resources */,
+				09C82BC936F692C649312E99 /* Localizable.xcstrings in Resources */,
 				D53B676588FA9972303CAAAD /* InfoPlist.strings in Resources */,
 				9C7F8670848FB76723697FA2 /* PrivacyInfo.xcprivacy in Resources */,
 			);
