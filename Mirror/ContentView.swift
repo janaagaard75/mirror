@@ -1,3 +1,4 @@
+import AVFoundation
 import SwiftUI
 import UIKit
 
@@ -5,6 +6,8 @@ struct ContentView: View {
   let buttonSize = 64.0
   let buttonOffset = 2.0
 
+  @Environment(\.scenePhase) private var scenePhase
+  @State private var cameraAuthorization = AVCaptureDevice.authorizationStatus(for: .video)
   @State private var floodLightOn = false
   @State private var brightnessBeforeFlashlight: CGFloat = 0.5
   @State private var zoom: CGFloat = 1.0
@@ -18,6 +21,33 @@ struct ContentView: View {
   }
 
   var body: some View {
+    Group {
+      switch cameraAuthorization {
+      case .authorized:
+        mirror
+      case .denied, .restricted:
+        CameraAccessNeededView()
+      case .notDetermined:
+        Color.black.ignoresSafeArea()
+      @unknown default:
+        CameraAccessNeededView()
+      }
+    }
+    .task {
+      guard cameraAuthorization == .notDetermined else { return }
+      let granted = await AVCaptureDevice.requestAccess(for: .video)
+      cameraAuthorization = granted ? .authorized : .denied
+    }
+    .onChange(of: scenePhase) { _, phase in
+      // Re-read the status when returning to the app, e.g. after the user
+      // toggled camera access in Settings.
+      if phase == .active {
+        cameraAuthorization = AVCaptureDevice.authorizationStatus(for: .video)
+      }
+    }
+  }
+
+  private var mirror: some View {
     GeometryReader { geometry in
       ZStack {
         CameraPreview(zoom: zoom)
@@ -77,6 +107,53 @@ struct ContentView: View {
         screen.brightness = brightnessBeforeFlashlight
       }
     }
+  }
+}
+
+private struct CameraAccessNeededView: View {
+  var body: some View {
+    ZStack {
+      Color.black.ignoresSafeArea()
+      VStack(spacing: 24) {
+        Image(systemName: "video.slash.fill")
+          .font(.system(size: 56, weight: .regular))
+          .foregroundStyle(Color.white)
+
+        Text("Camera Access Needed")
+          .font(.title2.weight(.semibold))
+          .foregroundStyle(Color.white)
+
+        Text("Mirror needs access to your camera to use the screen as a mirror. It can't work without access to the camera.")
+          .multilineTextAlignment(.center)
+          .foregroundStyle(Color.white.opacity(0.75))
+
+        VStack(alignment: .leading, spacing: 8) {
+          Label("Tap Open Settings below", systemImage: "1.circle.fill")
+          Label("Turn on Camera", systemImage: "2.circle.fill")
+        }
+        .font(.callout)
+        .foregroundStyle(Color.white.opacity(0.75))
+        .padding(.top, 4)
+
+        Button {
+          guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
+          UIApplication.shared.open(url)
+        } label: {
+          Text("Open Settings")
+            .font(.headline)
+            .padding(.horizontal, 24)
+            .padding(.vertical, 12)
+        }
+        .buttonStyle(.plain)
+        .foregroundStyle(Color.white)
+        .glassEffect(.clear, in: Capsule())
+        .padding(.top, 8)
+      }
+      .padding(40)
+      .frame(maxWidth: 420)
+    }
+    .statusBarHidden()
+    .persistentSystemOverlays(.hidden)
   }
 }
 

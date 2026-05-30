@@ -29,6 +29,8 @@ final class CameraPreviewView: UIView {
   private let sessionQueue = DispatchQueue(label: "mirror.camera.session")
   private var device: AVCaptureDevice?
   private let maximumZoom: CGFloat = 5.0
+  private var rotationCoordinator: AVCaptureDevice.RotationCoordinator?
+  private var rotationObservation: NSKeyValueObservation?
 
   func start() {
     previewLayer.videoGravity = .resizeAspectFill
@@ -88,11 +90,35 @@ final class CameraPreviewView: UIView {
     device = frontCamera
 
     DispatchQueue.main.async { [weak self] in
-      guard let connection = self?.previewLayer.connection else { return }
+      guard let self, let connection = self.previewLayer.connection else { return }
       connection.automaticallyAdjustsVideoMirroring = false
       connection.isVideoMirrored = true
+
+      // Only the iPad allows interface rotation. On iPhone the UI is locked to portrait, so the default preview rotation is already correct and we leave it untouched. On iPad, track the device so the preview stays upright as it rotates through all four orientations.
+      guard UIDevice.current.userInterfaceIdiom == .pad else { return }
+      let coordinator = AVCaptureDevice.RotationCoordinator(
+        device: frontCamera, previewLayer: self.previewLayer
+      )
+      self.rotationCoordinator = coordinator
+      self.applyPreviewRotation()
+      self.rotationObservation = coordinator.observe(
+        \.videoRotationAngleForHorizonLevelPreview, options: [.new]
+      ) { [weak self] _, _ in
+        DispatchQueue.main.async { self?.applyPreviewRotation() }
+      }
     }
 
     session.startRunning()
+  }
+
+  private func applyPreviewRotation() {
+    guard
+      let coordinator = rotationCoordinator,
+      let connection = previewLayer.connection
+    else { return }
+    let angle = coordinator.videoRotationAngleForHorizonLevelPreview
+    if connection.isVideoRotationAngleSupported(angle) {
+      connection.videoRotationAngle = angle
+    }
   }
 }
