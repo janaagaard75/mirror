@@ -17,10 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18717181A07103750B2DDF1D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		12571CE622B0AF3471AB228E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		153695B0BA66343CA3362301 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1AEC7BFFF344962F26EC8458 /* Mirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18717181A07103750B2DDF1D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1AEC7BFFF344962F26EC8458 /* HonestMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HonestMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20126EDA9A47EE47BE931CE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		278642C2F5C4D0A8017B582C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2ABD74F43E8E51371F9D1169 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -66,12 +66,12 @@
 		60677C36157AC41ADAC5FABD = {
 			isa = PBXGroup;
 			children = (
-				ACCF51ACB298FD7C2D4524D9 /* Mirror */,
+				ACCF51ACB298FD7C2D4524D9 /* HonestMirror */,
 				EDE85CD2407C4419DCBF8395 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ACCF51ACB298FD7C2D4524D9 /* Mirror */ = {
+		ACCF51ACB298FD7C2D4524D9 /* HonestMirror */ = {
 			isa = PBXGroup;
 			children = (
 				BF47088136F4042A5785D3A5 /* Assets.xcassets */,
@@ -82,13 +82,13 @@
 				4D69049E71CD3D508BD6D63E /* PrivacyInfo.xcprivacy */,
 				3C353C15A6DFCA31FCC11D3F /* InfoPlist.strings */,
 			);
-			path = Mirror;
+			path = HonestMirror;
 			sourceTree = "<group>";
 		};
 		EDE85CD2407C4419DCBF8395 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AEC7BFFF344962F26EC8458 /* Mirror.app */,
+				1AEC7BFFF344962F26EC8458 /* HonestMirror.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,9 +96,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		641264E2E78C798538194157 /* Mirror */ = {
+		641264E2E78C798538194157 /* HonestMirror */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E3C23D676EE9E61D3A9CC76 /* Build configuration list for PBXNativeTarget "Mirror" */;
+			buildConfigurationList = 8E3C23D676EE9E61D3A9CC76 /* Build configuration list for PBXNativeTarget "HonestMirror" */;
 			buildPhases = (
 				5AE1BB719A8672AF16E99576 /* Sources */,
 				3A10D8E745F91A781DE63CD2 /* Resources */,
@@ -107,11 +107,11 @@
 			);
 			dependencies = (
 			);
-			name = Mirror;
+			name = HonestMirror;
 			packageProductDependencies = (
 			);
 			productName = Mirror;
-			productReference = 1AEC7BFFF344962F26EC8458 /* Mirror.app */;
+			productReference = 1AEC7BFFF344962F26EC8458 /* HonestMirror.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 02E1EC886FF768802A008E1F /* Build configuration list for PBXProject "Mirror" */;
+			buildConfigurationList = 02E1EC886FF768802A008E1F /* Build configuration list for PBXProject "HonestMirror" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -177,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				641264E2E78C798538194157 /* Mirror */,
+				641264E2E78C798538194157 /* HonestMirror */,
 			);
 		};
 /* End PBXProject section */
@@ -343,6 +343,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = honestmirror.janaagaard.com;
+				PRODUCT_NAME = HonestMirror;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,6 +430,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = honestmirror.janaagaard.com;
+				PRODUCT_NAME = HonestMirror;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,7 +440,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02E1EC886FF768802A008E1F /* Build configuration list for PBXProject "Mirror" */ = {
+		02E1EC886FF768802A008E1F /* Build configuration list for PBXProject "HonestMirror" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90123DE5EDB51C5CD527A90C /* Debug */,
@@ -447,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		8E3C23D676EE9E61D3A9CC76 /* Build configuration list for PBXNativeTarget "Mirror" */ = {
+		8E3C23D676EE9E61D3A9CC76 /* Build configuration list for PBXNativeTarget "HonestMirror" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF28F256812CA5838E24541B /* Debug */,
